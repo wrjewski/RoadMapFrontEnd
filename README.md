@@ -5,7 +5,7 @@ https://roadmap.sh/projects/single-page-cv
 #project 2: basic html website
 https://roadmap.sh/projects/basic-html-website
 <br />
-#project 2: Personal Portfolio
+#project 3: Personal Portfolio
 https://roadmap.sh/projects/portfolio-website
 # More Refferences
 I use these resources to create such a cv project:
