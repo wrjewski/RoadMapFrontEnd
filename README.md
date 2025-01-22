@@ -10,6 +10,6 @@ https://roadmap.sh/projects/portfolio-website
 <br />
 #project 4: Changelog Component
 https://roadmap.sh/projects/changelog-component
-# More Refferences
+# More References
 I use these resources to create such a cv project:
 1)	https://www.w3schools.com/html/default.asp
