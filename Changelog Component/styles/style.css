@@ -1,0 +1,122 @@
+/* GLOBAL RESET AND FONTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+/* MAIN CONTAINER */
+.changelog-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.changelog-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.changelog-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.changelog-header p {
+    color: #666;
+}
+
+/* TIMELINE CONTAINER AND LINE */
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+}
+
+/* TIMELINE ITEMS */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.timeline-date {
+    width: 30%;
+    text-align: right;
+    color: #999;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+.timeline-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    z-index: 1;
+    left: 35%;
+    transform: translate(-50%, 0);
+}
+.timeline-content {
+    width: 60%;
+    margin-left: auto;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+.timeline-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+/* FOOTER BUTTON */
+.changelog-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+.changelog-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.changelog-button:hover {
+    background-color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 10%;
+    }
+    .timeline-date {
+        width: 15%;
+        font-size: 0.8rem
+    }
+    .timeline-content {
+        width: 75%;
+    }
+}
